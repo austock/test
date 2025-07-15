@@ -1,0 +1,683 @@
+
+<!-- saved from url=(0243)file:///C:/Users/admin/Downloads/1955c5b5-8473-4f35-8d38-087b93bba1b6_Export-1b816b06-eb15-4084-aaf0-97e7fa49f6a4/1%20CLIP%20STUDIO%E3%81%A8%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%20b30db0ee82c44f84b6e0620941e8c651.html -->
+<html class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>1. CLIP STUDIO와 애니메이션</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-default { background-color: rgba(84, 72, 49, 0.08); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="./1. CLIP STUDIO와 애니메이션_files/m=el_main_css"></head><body><article id="b30db0ee-82c4-4f84-b6e0-620941e8c651" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="./1. CLIP STUDIO와 애니메이션_files/movie_gray.svg"></div><h1 class="page-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. CLIP STUDIO와 애니메이션</font></font></h1><p class="page-description"></p></header><div class="page-body"><figure id="a1c11425-7893-424e-886e-19e3e6d4446a" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled.png"><img style="width:528px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled.png"></a></figure><p id="00f571c0-9af6-4d5e-b0ee-f94198f6a353" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">이것은 나의 화면.</font></font></p><p id="f11ccec6-13ed-46de-9d87-b147ac401033" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">어느 팔레트를 어디에 어느 크기로 배치할지는 자유롭게 조정할 수 있으므로, 각각의 화면과 조금씩 차이가 있으므로 주의하자.</font></font></p><hr id="1deb1c26-a07f-4f71-9c03-2dcbe1fcc1e7"><h1 id="1f18f26d-bd63-4bb2-9ff9-d290e184f2cc" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">타임라인이란?</font></font></h1><p id="e4eb3e62-7d8a-4446-896d-ab89f615e99d" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLIP STUDIO는 기본적으로 「그림을 그리는 프로그램」이군요.</font></font></p><p id="b9ccece0-0349-4950-b668-510d0999eba3" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">이미지가 혼자 움직이지 않도록 CLIP STUDIO로 그린 그림도 혼자 움직이지 않는다.</font></font></p><p id="03d72c29-c3e5-48fb-aad8-c4367667d44c" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">그림(이미지)은 시간이 멈추고 있는 미디어이기 때문에.</font></font></p><p id="3ce04669-85e8-4895-81ae-8fe0a037a2de" class=""><span style="border-bottom:0.05em solid"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">그래서 우리가 이 녀석들에게 시간을 만들어주지 않으면.</font></font></strong></span></p><p id="1a422b4f-79f5-43e4-9b60-4830ce53ed1b" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">그 때문에 필요한 것이 『타임라인』이다.</font></font></p><p id="882635e2-974e-4f5b-ac64-2717d1bff62b" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">타임라인을 만들고 조정할 수 있는 </font></font><span style="border-bottom:0.05em solid"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">팔레트</font></font></strong></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 가 필요하다.</font></font></p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="5bfb6e02-bb9c-4889-9bbc-883fc0822154"><div style="font-size:1.5em"><span class="icon"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💡</font></font></span></div><div style="width:100%"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TIP 팔레트란?</font></font><p id="9347fcdb-b347-4d40-b39d-9f258c48f2f6" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">화면을 구성하고 있는 각각의 역할이야.「컬러 서클」이라고 하는 팔레트는 색을 선택할 수 있고, 「툴 프로퍼티」라고 하는 팔레트는 사용하고 있는 툴(펜이나 지우개 등)의 설정을 조작할 수 있고, 「레이어」라고 하는 팔레트는 레이어를 조작할 수 있다.</font></font></p><figure id="15aac16f-8210-4cf7-97e8-0a54e0288fca" class="image"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 1.png"><img style="width:576px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 1.png"></a></figure><p id="03f9801c-8164-456b-89dd-7a6246c5b3e3" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">청색으로 표시한 것 모두 「팔레트」야.팔레트의 위치와 크기는 자유롭게 조절할 수 있다 자신이 사용하는 기능과 작업 동선을 파악해, 자신만의 팔레트 구성을 만들어 보는 것도 좋다!</font></font></p></div></figure><figure id="a8888706-fc8c-4368-84a3-aa9412a9b65d" class="image"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 2.png"><img style="width:720px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 2.png"></a></figure><p id="d284c410-371f-4255-a31c-accd0e4bb5d0" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">타임라인 팔레트는 이렇게 되어 있다.</font></font></p><div id="6d100f3a-db48-4af9-bb3e-e06f5d1c2ef0" class="column-list"><div id="8d1c3aef-6fd2-4aa3-986c-e6688e335cf0" style="width:43.75%" class="column"><figure id="048c9e81-042c-4463-97ec-aedb331ef87b" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 3.png"><img style="width:248.66964721679688px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 3.png"></a></figure></div><div id="ea7e6f26-58c0-4f8c-b37c-f111c3b4489a" style="width:56.25%" class="column"><figure id="9f1d4c20-2740-4f51-bce9-fb3794369e72" class="image"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 4.png"><img style="width:1918px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 4.png"></a></figure></div></div><p id="afa5c90e-e0a3-4d5f-bf35-6533862c586a" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">캔버스 아래의 이것을 눌러도 나오고.</font></font></p><figure id="4773068d-56c8-4725-997e-cda9776ffb14" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 5.png"><img style="width:240px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 5.png"></a></figure><p id="a24ef6d6-1d1a-4355-8ae0-2ac8d7a6aef9" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">창 - 타임라인을 눌러도 나온다.</font></font></p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="597524a6-703f-421f-94e1-271a52e44c9a"><div style="font-size:1.5em"><span class="icon"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💡</font></font></span></div><div style="width:100%"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TIP 팔레트 만들기 vs 팔레트 열기</font></font><p id="654873ba-dab2-4fba-bd18-0be2abf4367f" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[윈도우]로부터 붙이는 것은 팔레트를 「열기」보다 나의 화면에 「타임라인」이라고 하는 팔레트를 「만들어 둔다」에 </font></font><span style="border-bottom:0.05em solid"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">가깝다</font></font></strong></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></p></div></figure><hr id="81938107-599b-4950-b40f-fdb5edb05362"><h1 id="7ab24631-2e97-4c2f-8d51-cf690eeee03b" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">타임 라인은 어떻게 만들 수 있습니까?</font></font></h1><div id="96d810fd-6e35-4f51-9ff2-68afd8c154e6" class="column-list"><div id="b1413597-01d5-4740-81af-cef0e42517e1" style="width:43.75%" class="column"><figure id="b3e3f523-f3d1-43e4-a798-6476a33c60e9" class="image"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 6.png"><img style="width:248.66964721679688px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 6.png"></a></figure></div><div id="eb638ad2-e0d7-4b63-be32-77d359da8048" style="width:56.25%" class="column"><figure id="0c427d2f-618c-492e-9a74-217c001fc0be" class="image"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 7.png"><img style="width:319.7232360839844px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 7.png"></a></figure></div></div><p id="5aebb9b7-cfd1-4a77-8c3f-0ab625a26fa8" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">이것이야, 이것.</font></font></p><figure id="c50bed30-8e89-4d2c-9337-9746714f4f4b" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 8.png"><img style="width:432px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 8.png"></a></figure><p id="269fa39c-d412-4df0-9c7c-2705eef57aa2" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[신규 타임라인] 버튼을 누르면 이런 화면이 나온다.</font></font></p><p id="23a37364-a1ad-4dbd-9f9c-7485fb6fb05a" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">설명하겠습니다~</font></font></p><figure id="14f66392-6981-4c10-8693-c14552ab49cd" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 9.png"><img style="width:432px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 9.png"></a></figure><p id="a068d09b-1e89-4c51-869d-f1f5d8243108" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">간단~</font></font></p><blockquote id="47ab313f-b289-4f50-b72b-8df13a91b598" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">타임 라인 이름 : 만지지 않아도됩니다.</font></font><p id="c5cfbefe-3ba4-4edf-ad41-3a562228cbf5" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">프레임 속도 : 선생님의 지시대로</font></font></p><p id="eecc91c7-c4a5-4468-90dc-e9782c37b50d" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">재생시간: 24fps라면 240을 넣으면 10초의 애니메이션이 된다. 그러나, 이것은 작업중에 얼마든지 늘려 줄일 수 있다.</font></font></p><p id="36dad265-e118-4368-b732-61838dbf045b" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">기타 : 만지지 않아도 좋다 (걱정된다면 들어봐)</font></font></p></blockquote><hr id="aeaf93fe-a5fa-4ef3-bad6-ba06ec685b46"><h1 id="c08119d7-dc48-49b0-b0a7-bd9333990f1b" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">처음부터 애니메이션으로 만들기</font></font></h1><p id="43e3e925-8f32-4162-afb7-790e4a71fbde" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">위의 [타임라인을 만드는 방법]은 "일러스트"에 시간을 추가하는 방법이야.</font></font></p><p id="9999701b-27d4-4c9a-8321-055fddbba6be" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">처음부터 「</font></font><em><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLIP STUDIO씨, 나는 오늘 일러스트가 아니라 애니메이션을 만듭니다</font></font></strong></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">」라고 하면 타임라인을 넣어 준 버전으로 캔버스를 만들어 준다.</font></font></p><figure id="8e9084c1-dc9f-4b63-9735-33175799adc1" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 10.png"><img style="width:545px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 10.png"></a></figure><p id="15db9b07-4a41-4806-a8a7-384ec6216a40" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLIP STUDIO에서 새로운 캔버스를 만드는 방법은 모두 알고 있니?</font></font></p><p id="6b1ee058-832c-44e5-8992-c8b19a7d705b" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">파일 - 신규를 누르거나 위의 버튼을 클릭하면 된다.</font></font></p><figure id="14789d5c-736b-4207-96c2-d5bc2fd24e52" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 11.png"><img style="width:432px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 11.png"></a></figure><p id="457f0e56-ba85-4d71-b98f-baa8b876630f" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">신규 파일 작성시, 맨 위의 [작품의 용도]에서 좋아하는 버전을 선택할 수 있다.</font></font></p><p id="3b16e099-45bd-410c-bd9c-3f5a90ecfcae" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">일러스트, 스크롤형 만화, 페이지형 만화, 애니메이션 등.</font></font></p><p id="b09e27da-57bf-4cd7-a7cf-6d1055f3bb2d" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">우리가 만드는 것은 애니메이션입니까?</font></font></p><p id="30fc59c4-9d69-44dd-9c3a-463b29cb8e15" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">가장 오른쪽의 비디오형 버튼이 애니메이션이에요.</font></font></p><figure id="d0ac5782-cf67-45d8-9c8d-5f1ca218a3e5" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 12.png"><img style="width:432px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 12.png"></a></figure><p id="358365f7-8e78-4255-bd43-51b94002155b" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">애니메이션을 설정하면 이렇게 된다.</font></font></p><p id="284d1377-8142-41b4-9a50-b398b785dd4e" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">일러스트는 캔버스의 크기만 설정하면 좋았는데, 애니메이션은 뭔가 가득 있어 복잡하죠?</font></font></p><p id="e3dd655e-00b6-428b-90f0-5a4f8ea4ec54" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">설명해 준다.</font></font></p><figure id="6e07a124-0ae0-4cdb-854f-104ec9153533" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 13.png"><img style="width:576px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 13.png"></a></figure><blockquote id="7d6e4140-7366-490c-8bfc-3186bd7b3894" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">파랑: 이미 알고 있는 내용</font></font><p id="53c13435-b960-4aa7-8b10-6f6e151859f1" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">녹색: 만지지 않아도 괜찮습니다.</font></font></p><p id="1cf94120-6444-47b5-a6b5-7e8e02c5de3c" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">레드: 지금부터 설명 합니다!</font></font></p></blockquote><hr id="2e2f5b84-55bf-4de4-b42f-0a3112d83777"><h1 id="606f4695-63a1-4ed2-840b-c926d4961fcf" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">연출 프레임과 여백</font></font></h1><figure id="6020757e-ad2f-4f9a-bd46-828354f95439" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 14.png"><img style="width:480px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 14.png"></a></figure><p id="37bf866a-0d76-4b16-890a-8a47c5db746f" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">애니메이션을 만들 때, 이런 것을 사용하잖아.「어째서 이렇게 선이 많은 거야?」라고 생각하지 않아?</font></font></p><p id="51d3d05b-b1e6-4ac4-9215-57de503088e0" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">애니메이션은 카메라 등이 움직이기 때문에 원래 어느 정도 여유를 가지고 화면 밖까지 그림을 그리게 된다.</font></font></p><p id="4148d6c0-782c-484a-aea1-96dc82f1b985" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">이것을 여백 </font></font><span style="border-bottom:0.05em solid"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">이라고</font></font></strong></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 부른다.</font></font></p><p id="fd891ac5-bc4a-4517-91a7-bee2b8c631f8" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">그리고 비슷한 이유로 중요한 객체(캐릭터의 얼굴 등)는 화면의 어느 정도 여유를 가지고 안쪽에 그린다.</font></font></p><p id="0c5c019d-46a2-4944-9892-809f70f17e01" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">이것을 연출 </font></font><span style="border-bottom:0.05em solid"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">프레임</font></font></strong></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 이라고 부른다.</font></font></p><figure id="a26575cb-6801-427d-985e-ffaa171f6e18" class="image" style="text-align:left"><a href="./1. CLIP STUDIO와 애니메이션_files/Untitled 15.png"><img style="width:576px" src="./1. CLIP STUDIO와 애니메이션_files/Untitled 15.png"></a></figure><p id="3ae92b22-0dc5-4cbd-b272-524534eaafe6" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1920*1080의 크기는 중간 "기준선"에 적응된다.</font></font></p><p id="b37c4e1c-01eb-4dc8-9448-9419810528bd" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">핑크 부분이 연출 프레임으로 표시된 안쪽 선의 영역에서</font></font></p><p id="7812e8c1-abf1-4382-9fa3-ce76c0b9f135" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">녹색 부분이 여백으로 표시된 외선의 영역이야.</font></font></p><p id="20cb9ec1-934d-468f-85bf-fa6242cdde62" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">그래서 기본적으로 애니메이션은</font></font><mark class="highlight-teal_background"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A와 B와 C 중</font></font></strong></mark><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">화면에 반드시 들어가야 할 일이 있다면</font></font><mark class="highlight-red_background"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A와 B 중</font></font></strong></mark><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">에, 연출에 중요한 것이 있으면 </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 안에 그리면 좋지?</font></font></p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="cff7190f-ea3a-4d73-9086-c379f339cad5"><div style="font-size:1.5em"><span class="icon"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💡</font></font></span></div><div style="width:100%"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TIP</font></font><p id="49a39a18-c536-4d71-8dd8-fd0f394857b0" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">여백과 연출 프레임을 넣지 않아도 어디까지나 개인 스타일이지만, 단체에서 작업하는 경우는 통일하는 것이 좋다.</font></font></p></div></figure><p id="b7d6f68d-e153-4031-9801-4702e32c9f40" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">덧붙여서 여백과 연출 프레임은 어떻게 설정해도 애니메이션을 낼 때는 기준 캔버스 사이즈에 맞추기 때문에 걱정하지 않아도 좋다.</font></font></p><hr id="fc01eb3a-4c58-489f-abd7-f5e4c783d3ec"><figure id="43c890d7-a914-46ad-89a8-5b68a3775465" class="link-to-page"><a href="file:///C:/Users/admin/Downloads/1955c5b5-8473-4f35-8d38-087b93bba1b6_Export-1b816b06-eb15-4084-aaf0-97e7fa49f6a4/2%20%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%A8%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%AB%E3%82%BF%E3%82%99%E3%83%BC%2043c890d7a91446ad89a85b68a3775465.html"><img class="icon" src="./1. CLIP STUDIO와 애니메이션_files/movie_gray.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. 타임라인과 애니메이션 폴더</font></font></a></figure><p id="3c1c42d1-3048-4e14-9c8c-fa45822d1efd" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2에서 계속</font></font></p><p id="b8637fe8-74d8-470d-983a-91b822fe8a47" class="">
+</p></div></article><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="./1. CLIP STUDIO와 애니메이션_files/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">원본 텍스트</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">번역 평가</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">보내주신 의견은 Google 번역을 개선하는 데 사용됩니다.</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="번역 품질 좋음" aria-label="번역 품질 좋음" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="번역 품질 좋지 않음" aria-label="번역 품질 좋지 않음" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="file://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="./1. CLIP STUDIO와 애니메이션_files/saved_resource.html"></iframe></div></div></div><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
